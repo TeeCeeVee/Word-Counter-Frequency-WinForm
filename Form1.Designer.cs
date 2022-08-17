@@ -37,6 +37,9 @@
             this.LstWords = new System.Windows.Forms.ListBox();
             this.BtnCreateWordList = new System.Windows.Forms.Button();
             this.BtnSort = new System.Windows.Forms.Button();
+            this.BtnCount = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // Lbl1
@@ -124,11 +127,42 @@
             this.BtnSort.UseVisualStyleBackColor = true;
             this.BtnSort.Click += new System.EventHandler(this.BtnSort_Click);
             // 
+            // BtnCount
+            // 
+            this.BtnCount.Location = new System.Drawing.Point(873, 59);
+            this.BtnCount.Name = "BtnCount";
+            this.BtnCount.Size = new System.Drawing.Size(75, 23);
+            this.BtnCount.TabIndex = 7;
+            this.BtnCount.Text = "Count";
+            this.BtnCount.UseVisualStyleBackColor = true;
+            this.BtnCount.Click += new System.EventHandler(this.BtnCount_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(955, 58);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(826, 131);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(248, 404);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1315, 608);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BtnCount);
             this.Controls.Add(this.BtnSort);
             this.Controls.Add(this.BtnCreateWordList);
             this.Controls.Add(this.LstWords);
@@ -156,6 +190,9 @@
         private System.Windows.Forms.ListBox LstWords;
         private System.Windows.Forms.Button BtnCreateWordList;
         private System.Windows.Forms.Button BtnSort;
+        private System.Windows.Forms.Button BtnCount;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

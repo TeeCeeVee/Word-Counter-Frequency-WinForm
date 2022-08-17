@@ -59,5 +59,13 @@ namespace WordCounterApp
             LstWords.Sorted = true;
         }
 
+        private void BtnCount_Click(object sender, EventArgs e)
+        {
+            string allWords = TextChooseFile.Text;
+            string[] allWordsArray = allWords.Split(' ', '.', ',', '-', '!', ':');
+
+            // convert the array to list to use find command
+
+        }
     }
 }
